@@ -5,6 +5,9 @@
   <title>
     <%= title %>
   </title>
+  <link rel="icon" href="../images/breadcrumb-3.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/notion.css">
 </head>
 
@@ -12,18 +15,19 @@
 
     <% include breadcrumb.ejs%>
     <div class="app-notion">
-      <!-- <% include body-p1.ejs%> -->
-      <!-- <% include body-p2.ejs%> -->
-      <!-- <% include body-p3.ejs%> -->
-      <!-- <% include body-p4.ejs%> -->
-      <!-- <% include body-p5.ejs%> -->
-      <!-- <% include body-p6.ejs%> -->
-      <!-- <% include body-p7.ejs%> -->
-      <% include footer.ejs%>
+      <% include body-p1.ejs%>
+      <% include body-p2.ejs%>
+      <% include body-p3.ejs%>
+      <% include body-p4.ejs%>
+      <% include body-p5.ejs%>
+      <% include body-p6.ejs%>
+      <% include body-p7.ejs%>
+      <% include ../common/footer.ejs%>
     </div>
 
 
 
 </body>
-
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
 </html>
