@@ -1,9 +1,19 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-x: auto !important;
+}
+
 body {
-    background: #fff
+    background: #fff;
 }
 
 body.dark {
     background: #2f3437
+}
+
+img[src=""], img:not([src]) {
+    opacity: 0;
 }
 
 .initial-loading-spinner {
@@ -44,19 +54,22 @@ body.dark {
     width: 10px;
     height: 10px;
 }
+
 ::-webkit-scrollbar {
     background: transparent;
 }
+
 ::-webkit-scrollbar-track {
     background: #EDECE9;
 }
+
 ::-webkit-scrollbar-thumb {
-    background:#D3D1CB;
-}
-::-webkit-scrollbar-thumb:hover {
-    background:#AEACA6;
+    background: #D3D1CB;
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background: #AEACA6;
+}
 
 .app-notion {
     display: flex;
