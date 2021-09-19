@@ -12,7 +12,7 @@ router.get('/all_series', function(req, res, next) {
 });
 
 router.get('/all_series/gujian_ol', function(req, res, next) {
-  res.render('gujian_ol/index', { title: '古剑奇谭网络版Wiki' });
+  res.render('all_series/gujian_ol/index', { title: '古剑奇谭网络版Wiki' });
 });
 
 
