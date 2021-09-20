@@ -16,5 +16,14 @@ router.get('/all_series/gujian_ol', function(req, res, next) {
 });
 
 
+router.get('/mini_games', function(req, res, next) {
+  res.render('mini_games/index', { title: '古剑小游戏' });
+});
+
+
+router.get('/mini_games/qianqiuxi', function(req, res, next) {
+  res.render('mini_games/qianqiuxi/index', { title: '古剑小游戏-千秋戏' });
+});
+
 
 module.exports = router;

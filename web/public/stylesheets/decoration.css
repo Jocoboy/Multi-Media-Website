@@ -1,0 +1,113 @@
+#poolcontainer>#poolcards div:nth-child(4) {
+    transform: rotate(8deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(5) {
+    transform: rotate(-15deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(6) {
+    transform: rotate(-12deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(7) {
+    transform: rotate(-5deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(8) {
+    transform: rotate(12deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(9) {
+    transform: rotate(3deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(10) {
+    transform: rotate(25deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(11) {
+    transform: rotate(-9deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(12) {
+    transform: rotate(-6deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(13) {
+    transform: rotate(5deg);
+}
+
+#poolcontainer>#poolcards div:nth-child(n+4) {
+    transition: all 400ms;
+}
+
+#poolcontainer>#poolcards div:nth-child(n+4):nth-child(odd) {
+    top: 0;
+}
+
+#poolcontainer>#poolcards div:nth-child(n+4):nth-child(even) {
+    top: 20%;
+}
+
+#poolcontainer>#poolcards div:nth-child(n+4):nth-child(odd):hover {
+    transform: rotate(0);
+    top: -30%;
+}
+
+#poolcontainer>#poolcards div:nth-child(n+4):nth-child(even):hover {
+    transform: rotate(0);
+    top: 50%;
+}
+
+#mycontainer>#mycards div {
+    transition: all 400ms;
+    top: 0;
+}
+
+#mycontainer>#mycards div:hover {
+    top: -30%;
+}
+
+@keyframes cardluminous {
+    from {
+        box-shadow: 0 0 0.5vw var(--card-luminous-color);
+    }
+    to {
+        box-shadow: 0 0 0.75vw var(--card-luminous-color);
+    }
+}
+
+#specialcard>.card:hover {
+    animation: cardluminous 400ms linear forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.show {
+    animation: fadein 600ms linear forwards;
+}
+
+.hide {
+    animation: fadeout 600ms linear forwards;
+}
+
+#trickbox>#trickbody>#trickimage div:nth-child(n+1):hover {
+    border: 1px solid var(--card-border-color);
+}
