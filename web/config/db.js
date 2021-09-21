@@ -3,7 +3,7 @@ const config = {
     port: 3306,
     user: 'root',
     password: 'root1234',
-    database: 'wiki'
+    database: 'gujian_wiki'
 }
 
 

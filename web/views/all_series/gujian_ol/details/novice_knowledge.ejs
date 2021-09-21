@@ -12,12 +12,14 @@ style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
 class="notion-selectable notion-column_list-block"
 style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;">
 <div style="display: flex;">
+    <% for(var i = 0; i < 4 ;i++){%>
     <div
         style="padding-top: 12px; padding-bottom: 12px; flex-grow: 0; flex-shrink: 0; width: calc((100% - 138px) * 0.25);">
         <div data-block-id="2c36c370-a9d2-4264-8657-ec4c31c16fed"
             class="notion-selectable notion-column-block"
             style="display: flex; flex-direction: column;">
-            <div data-block-id="17bf68f0-33f1-4852-a00a-a20b1e7f01c5"
+            <% for(var j = 0; j < novice_knowledge_Data.length/4  && i*3+j < novice_knowledge_Data.length ;j++){%>
+                <div data-block-id="17bf68f0-33f1-4852-a00a-a20b1e7f01c5"
                 class="notion-selectable notion-text-block"
                 style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
                 <div style="color: inherit; fill: inherit;">
@@ -30,10 +32,23 @@ style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;">
                                 data-token-index="0" href="/20b132f7217b4bf5a59276ba5c39d231"><span
                                     style="white-space:nowrap"></span><span
                                     style="white-space:nowrap"><span
-                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative"><img
+                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative">
+                                        <% if(novice_knowledge_Data[i*3+j].has_icon) { %> 
+                                            <img
                                             class="notion-emoji" alt="❓" aria-label="❓"
                                             style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:98.30508474576271%;background-position-y:16.94915254237288%;background-size:6000% 6000%"
-                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><svg
+                                            src="<%=novice_knowledge_Data[i*3+j].path%>"> 
+                                            
+                                        <% }
+                                        else{
+                                            %> 
+                                            <img
+                                            class="notion-emoji" alt="❓" aria-label="❓"
+                                            style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:98.30508474576271%;background-position-y:16.94915254237288%;background-size:6000% 6000%"
+                                            src="../images/detail/_blank.png"> 
+                                            <%
+                                        }%>
+                                            <svg
                                             viewBox="0 0 13 13"
                                             style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0"
                                             class="pageLinkIndicator">
@@ -43,425 +58,25 @@ style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;">
                                             </path>
                                         </svg></span></span><span
                                     style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">萌新引导手册(施工中）</span><span
+                                    class="notion-page-mention-token__title"><%=novice_knowledge_Data[i*3+j].name%></span><span
                                     style="white-space:nowrap"></span></a></div>
                     </div>
                 </div>
             </div>
-            <div data-block-id="3d294950-d0cf-46ef-aaba-299d0bafd23a"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px;"><a style="vertical-align:top;cursor:pointer;color:inherit;text-decoration:inherit;transition:all 100ms ease-in"
-                                contenteditable="false"
-                                class="notion-page-mention-token notion-text-mention-token notion-enable-hover"
-                                data-token-index="0" href="/3c17ddf364b741e3992b2ffcf8d4c8fa"><span
-                                    style="white-space:nowrap"></span><span
-                                    style="white-space:nowrap"><span
-                                        style="display:inline-block;width:1em;white-space:nowrap;position:relative;margin-right:0.2em;vertical-align:-0.15em"><img
-                                            style="width:1em;height:1em;border-radius:1px"
-                                            src="/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3653aed5-c3e9-46a7-9eb7-ad6aa04f50a1%2F2020-5-13-18-39-6.jpg?table=block&amp;id=3c17ddf3-64b7-41e3-992b-2ffcf8d4c8fa&amp;width=200&amp;userId=c4acf3d4-b474-4245-9d2d-6a37fdc0d001&amp;cache=v2"><svg
-                                            viewBox="0 0 13 13"
-                                            style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0.15em"
-                                            class="pageLinkIndicator">
-                                            <path
-                                                d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                fill="#3E3C38" stroke="white" stroke-width="1.5">
-                                            </path>
-                                        </svg></span></span><span
-                                    style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">游戏惯用语、图标</span><span
-                                    style="white-space:nowrap"></span></a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-block-id="f40e68b5-b270-4151-b78c-b5b2fd020cb4"
-                class="notion-selectable notion-alias-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;"><a href="/af797d3c55cf40c8b80ba012083dfb51" rel="noopener noreferrer"
-                    style="display: block; color: inherit; text-decoration: none; fill: inherit;">
-                    <div class="notion-focusable" role="button" tabindex="0"
-                        style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; width: 100%;">
-                        <div style="display: flex; align-items: center; width: 100%;">
-                            <div
-                                style="flex: 1 1 0px; min-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;">
-                                <div style="display: flex; align-items: center;">
-                                    <div
-                                        style="position: relative; width: 24px; height: 24px; margin-right: 4px;">
-                                        <div class="notion-record-icon notranslate notion-focusable"
-                                            role="button" aria-disabled="true" tabindex="-1"
-                                            style="user-select: none; transition: background 20ms ease-in 0s; display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-radius: 3px; flex-shrink: 0;">
-                                            <div
-                                                style="display: flex; align-items: center; justify-content: center; height: 22px; width: 22px;">
-                                                <div
-                                                    style="height: 15.4px; width: 15.4px; font-size: 15.4px; line-height: 1.1; margin-left: 0px; color: black;">
-                                                    <img class="notion-emoji" alt="💥"
-                                                        aria-label="💥"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                                        style="width: 100%; height: 100%; background: url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’) 47.4576% 32.2034% / 6000% 6000%;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div><svg viewBox="0 0 13 13" class="pageLinkIndicator"
-                                                style="width: 50%; height: 50%; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; position: absolute; right: 0px; bottom: 0px;">
-                                                <path
-                                                    d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                    fill="#3E3C38" stroke="white"
-                                                    stroke-width="1.5"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="notranslate"
-                                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; line-height: 1.3; border-bottom: 1px solid rgba(55, 53, 47, 0.16);">
-                                        剑心和剑技能</div>
-                                </div>
-                            </div>
-                            <div contenteditable="false" class="pseudoSelection"
-                                data-content-editable-void="true"
-                                style="user-select: none; --pseudoSelection--background:transparent; margin-left: 4px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc((1.5em + 3px) + 3px);">
-                                <div style="width: 28px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+
+            <%}%>
+    
         </div>
     </div>
     <div
         style="position: relative; width: 46px; flex-grow: 0; flex-shrink: 0; transition: opacity 200ms ease-out 0s; opacity: 0;">
     </div>
-    <div
-        style="padding-top: 12px; padding-bottom: 12px; flex-grow: 0; flex-shrink: 0; width: calc((100% - 138px) * 0.25);">
-        <div data-block-id="78896f68-8088-4ab0-8d05-b693ddc14929"
-            class="notion-selectable notion-column-block"
-            style="display: flex; flex-direction: column;">
-            <div data-block-id="9e91d89a-1267-47f5-b367-72aa3b9d2c71"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px;"><a style="vertical-align:top;cursor:pointer;color:inherit;text-decoration:inherit;transition:all 100ms ease-in"
-                                contenteditable="false"
-                                class="notion-page-mention-token notion-text-mention-token notion-enable-hover"
-                                data-token-index="0" href="/8ac76c19daaa47a2946b93a7c462dc99"><span
-                                    style="white-space:nowrap"></span><span
-                                    style="white-space:nowrap"><span
-                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative"><img
-                                            class="notion-emoji" alt="📊" aria-label="📊"
-                                            style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:49.152542372881356%;background-position-y:1.694915254237288%;background-size:6000% 6000%"
-                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><svg
-                                            viewBox="0 0 13 13"
-                                            style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0"
-                                            class="pageLinkIndicator">
-                                            <path
-                                                d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                fill="#3E3C38" stroke="white" stroke-width="1.5">
-                                            </path>
-                                        </svg></span></span><span
-                                    style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">版本/服务器</span><span
-                                    style="white-space:nowrap"></span></a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-block-id="76888dc1-3921-4fa7-a11f-a8e026d622e4"
-                class="notion-selectable notion-alias-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;"><a href="/9c9b7da80e1e4130aba4612c93cfc39a" rel="noopener noreferrer"
-                    style="display: block; color: inherit; text-decoration: none; fill: inherit;">
-                    <div class="notion-focusable" role="button" tabindex="0"
-                        style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; width: 100%;">
-                        <div style="display: flex; align-items: center; width: 100%;">
-                            <div
-                                style="flex: 1 1 0px; min-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;">
-                                <div style="display: flex; align-items: center;">
-                                    <div
-                                        style="position: relative; width: 24px; height: 24px; margin-right: 4px;">
-                                        <div class="notion-record-icon notranslate notion-focusable"
-                                            role="button" aria-disabled="true" tabindex="-1"
-                                            style="user-select: none; transition: background 20ms ease-in 0s; display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-radius: 3px; flex-shrink: 0;">
-                                            <div
-                                                style="display: flex; align-items: center; justify-content: center; height: 22px; width: 22px;">
-                                                <div
-                                                    style="height: 15.4px; width: 15.4px; font-size: 15.4px; line-height: 1.1; margin-left: 0px; color: black;">
-                                                    <img class="notion-emoji" alt="👜"
-                                                        aria-label="👜"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                                        style="width: 100%; height: 100%; background: url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’) 22.0339% 62.7119% / 6000% 6000%;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div><svg viewBox="0 0 13 13" class="pageLinkIndicator"
-                                                style="width: 50%; height: 50%; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; position: absolute; right: 0px; bottom: 0px;">
-                                                <path
-                                                    d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                    fill="#3E3C38" stroke="white"
-                                                    stroke-width="1.5"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="notranslate"
-                                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; line-height: 1.3; border-bottom: 1px solid rgba(55, 53, 47, 0.16);">背包扩容</div>
-                                </div>
-                            </div>
-                            <div contenteditable="false" class="pseudoSelection"
-                                data-content-editable-void="true"
-                                style="user-select: none; --pseudoSelection--background:transparent; margin-left: 4px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc((1.5em + 3px) + 3px);">
-                                <div style="width: 28px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div data-block-id="159e34a2-d82a-4566-a042-ba3ad3a1525f"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px;"><a style="vertical-align:top;cursor:pointer;color:inherit;text-decoration:inherit;transition:all 100ms ease-in"
-                                contenteditable="false"
-                                class="notion-page-mention-token notion-text-mention-token notion-enable-hover"
-                                data-token-index="0" href="/d0275455027f4358a418721cc901c909"><span
-                                    style="white-space:nowrap"></span><span
-                                    style="white-space:nowrap"><span
-                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative"><img
-                                            class="notion-emoji" alt="🔶" aria-label="🔶"
-                                            style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:50.847457627118644%;background-position-y:81.35593220338984%;background-size:6000% 6000%"
-                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><svg
-                                            viewBox="0 0 13 13"
-                                            style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0"
-                                            class="pageLinkIndicator">
-                                            <path
-                                                d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                fill="#3E3C38" stroke="white" stroke-width="1.5">
-                                            </path>
-                                        </svg></span></span><span
-                                    style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">移动传送</span><span
-                                    style="white-space:nowrap"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div
-        style="position: relative; width: 46px; flex-grow: 0; flex-shrink: 0; transition: opacity 200ms ease-out 0s; opacity: 0;">
-    </div>
-    <div
-        style="padding-top: 12px; padding-bottom: 12px; flex-grow: 0; flex-shrink: 0; width: calc((100% - 138px) * 0.25);">
-        <div data-block-id="e9198a01-ccde-4a45-896c-4460b376bc9c"
-            class="notion-selectable notion-column-block"
-            style="display: flex; flex-direction: column;">
-            <div data-block-id="4fff4cd7-9d8c-4b3c-b8a1-15524ef8045f"
-                class="notion-selectable notion-alias-block"
-                style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;"><a href="/68cba9c0768a405388a64e65c184c750" rel="noopener noreferrer"
-                    style="display: block; color: inherit; text-decoration: none; fill: inherit;">
-                    <div class="notion-focusable" role="button" tabindex="0"
-                        style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; width: 100%;">
-                        <div style="display: flex; align-items: center; width: 100%;">
-                            <div
-                                style="flex: 1 1 0px; min-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;">
-                                <div style="display: flex; align-items: center;">
-                                    <div
-                                        style="position: relative; width: 24px; height: 24px; margin-right: 4px;">
-                                        <div class="notion-record-icon notranslate notion-focusable"
-                                            role="button" aria-disabled="true" tabindex="-1"
-                                            style="user-select: none; transition: background 20ms ease-in 0s; display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-radius: 3px; flex-shrink: 0;">
-                                            <div>
-                                                <div style="width: 100%; height: 100%;"><img
-                                                        src="/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F287957b5-01c9-4ed5-ab58-15873f5c627f%2F06.png?table=block&amp;id=68cba9c0-768a-4053-88a6-4e65c184c750&amp;spaceId=6d84c864-1e3f-4e7b-9ef4-11245152bb0e&amp;width=40&amp;userId=c4acf3d4-b474-4245-9d2d-6a37fdc0d001&amp;cache=v2"
-                                                        style="display: block; object-fit: cover; border-radius: 3px; width: 19.536px; height: 19.536px; transition: opacity 100ms ease-out 0s;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div><svg viewBox="0 0 13 13" class="pageLinkIndicator"
-                                                style="width: 50%; height: 50%; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; position: absolute; right: 0px; bottom: 0px;">
-                                                <path
-                                                    d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                    fill="#3E3C38" stroke="white"
-                                                    stroke-width="1.5"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="notranslate"
-                                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; line-height: 1.3; border-bottom: 1px solid rgba(55, 53, 47, 0.16);">问道修行</div>
-                                </div>
-                            </div>
-                            <div contenteditable="false" class="pseudoSelection"
-                                data-content-editable-void="true"
-                                style="user-select: none; --pseudoSelection--background:transparent; margin-left: 4px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc((1.5em + 3px) + 3px);">
-                                <div style="width: 28px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div data-block-id="a0771af4-077b-462e-9aa8-7d4c9972660b"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px;"><a style="vertical-align:top;cursor:pointer;color:inherit;text-decoration:inherit;transition:all 100ms ease-in"
-                                contenteditable="false"
-                                class="notion-page-mention-token notion-text-mention-token notion-enable-hover"
-                                data-token-index="0" href="/d9aecbeca3354601aa66018b5748e0cd"><span
-                                    style="white-space:nowrap"></span><span
-                                    style="white-space:nowrap"><span
-                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative"><img
-                                            class="notion-emoji" alt="💻" aria-label="💻"
-                                            style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:47.45762711864407%;background-position-y:77.96610169491525%;background-size:6000% 6000%"
-                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><svg
-                                            viewBox="0 0 13 13"
-                                            style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0"
-                                            class="pageLinkIndicator">
-                                            <path
-                                                d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                fill="#3E3C38" stroke="white" stroke-width="1.5">
-                                            </path>
-                                        </svg></span></span><span
-                                    style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">游戏配置</span><span
-                                    style="white-space:nowrap"></span></a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-block-id="7b541668-e8ba-4fc7-99cd-ae895873a734"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px;"><a style="vertical-align:top;cursor:pointer;color:inherit;text-decoration:inherit;transition:all 100ms ease-in"
-                                contenteditable="false"
-                                class="notion-page-mention-token notion-text-mention-token notion-enable-hover"
-                                data-token-index="0" href="/41b21e1c2f864b16b801bbaa887010f8"><span
-                                    style="white-space:nowrap"></span><span
-                                    style="white-space:nowrap"><span
-                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative"><img
-                                            class="notion-emoji" alt="🗓" aria-label="🗓"
-                                            style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:54.23728813559322%;background-position-y:62.71186440677966%;background-size:6000% 6000%"
-                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><svg
-                                            viewBox="0 0 13 13"
-                                            style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0"
-                                            class="pageLinkIndicator">
-                                            <path
-                                                d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                fill="#3E3C38" stroke="white" stroke-width="1.5">
-                                            </path>
-                                        </svg></span></span><span
-                                    style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">日常周常列表</span><span
-                                    style="white-space:nowrap"></span></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div
-        style="position: relative; width: 46px; flex-grow: 0; flex-shrink: 0; transition: opacity 200ms ease-out 0s; opacity: 0;">
-    </div>
-    <div
-        style="padding-top: 12px; padding-bottom: 12px; flex-grow: 0; flex-shrink: 0; width: calc((100% - 138px) * 0.25);">
-        <div data-block-id="0d2904d2-e7e9-4435-bb96-c6642dd244d9"
-            class="notion-selectable notion-column-block"
-            style="display: flex; flex-direction: column;">
-            <div data-block-id="c4bd9d40-f543-4281-8640-8abb095ce91d"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 2px; margin-bottom: 1px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px;"><a style="vertical-align:top;cursor:pointer;color:inherit;text-decoration:inherit;transition:all 100ms ease-in"
-                                contenteditable="false"
-                                class="notion-page-mention-token notion-text-mention-token notion-enable-hover"
-                                data-token-index="0" href="/95028997c5b646d185351e67b594c2b2"><span
-                                    style="white-space:nowrap"></span><span
-                                    style="white-space:nowrap"><span
-                                        style="display:inline;width:1em;margin-right:0.2em;margin-bottom:0;white-space:nowrap;position:relative"><img
-                                            class="notion-emoji" alt="⚙" aria-label="⚙"
-                                            style="width:1em;height:1em;background-repeat:no-repeat;background:url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’);background-position-x:94.91525423728814%;background-position-y:66.10169491525424%;background-size:6000% 6000%"
-                                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><svg
-                                            viewBox="0 0 13 13"
-                                            style="width:0.7em;height:0.7em;display:block;fill:inherit;flex-shrink:0;backface-visibility:hidden;position:absolute;right:-0.2em;bottom:0"
-                                            class="pageLinkIndicator">
-                                            <path
-                                                d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                fill="#3E3C38" stroke="white" stroke-width="1.5">
-                                            </path>
-                                        </svg></span></span><span
-                                    style="border-bottom:0.05em solid rgba(55,53,47,0.25);font-weight:500"
-                                    class="notion-page-mention-token__title">常用设置</span><span
-                                    style="white-space:nowrap"></span></a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-block-id="b6c98add-df15-4305-8c1a-4aa83e154415"
-                class="notion-selectable notion-page-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 1px;"><a href="/b6c98adddf1543058c1a4aa83e154415" rel="noopener noreferrer"
-                    style="display: block; color: inherit; text-decoration: none; fill: inherit;">
-                    <div class="notion-focusable" role="button" tabindex="0"
-                        style="user-select: none; transition: background 20ms ease-in 0s; cursor: pointer; width: 100%;">
-                        <div style="display: flex; align-items: center; width: 100%;">
-                            <div
-                                style="flex: 1 1 0px; min-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-left: 2px;">
-                                <div style="display: flex; align-items: center;">
-                                    <div
-                                        style="position: relative; width: 24px; height: 24px; margin-right: 4px;">
-                                        <div class="notion-record-icon notranslate notion-focusable"
-                                            role="button" aria-disabled="true" tabindex="-1"
-                                            style="user-select: none; transition: background 20ms ease-in 0s; display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; border-radius: 3px; flex-shrink: 0;">
-                                            <div
-                                                style="display: flex; align-items: center; justify-content: center; height: 22px; width: 22px;">
-                                                <div
-                                                    style="height: 15.4px; width: 15.4px; font-size: 15.4px; line-height: 1.1; margin-left: 0px; color: black;">
-                                                    <img class="notion-emoji" alt="⚠️"
-                                                        aria-label="⚠️"
-                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                                        style="width: 100%; height: 100%; background: url(’/images/emoji/twitter-emoji-spritesheet-64.d3a69865.png’) 94.9153% 71.1864% / 6000% 6000%;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div><svg viewBox="0 0 13 13" class="pageLinkIndicator"
-                                                style="width: 50%; height: 50%; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; position: absolute; right: 0px; bottom: 0px;">
-                                                <path
-                                                    d="M6.30826 4.43292L1.76184 8.98454C1.76176 8.98462 1.76169 8.9847 1.76161 8.98477C1.76158 8.9848 1.76156 8.98482 1.76154 8.98484C1.46068 9.28584 1.25 9.6914 1.25 10.1565C1.25 10.6117 1.45865 11.0119 1.73417 11.2886C2.01014 11.5658 2.41107 11.7773 2.87078 11.7773C3.34169 11.7773 3.73758 11.5617 4.03477 11.2733L4.03482 11.2734L4.04244 11.2657L8.58864 6.72474V8.667C8.58864 9.51956 9.22729 10.2935 10.1521 10.2935C11.0528 10.2935 11.75 9.54534 11.75 8.66127V2.92671C11.75 2.48722 11.5981 2.06381 11.2838 1.74808C10.9689 1.43182 10.5446 1.27728 10.1006 1.27728H4.36028C3.46161 1.27728 2.72804 1.97749 2.72804 2.86942C2.72804 3.79734 3.51104 4.43292 4.35455 4.43292H6.30826Z"
-                                                    fill="#3E3C38" stroke="white"
-                                                    stroke-width="1.5"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="notranslate"
-                                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; line-height: 1.3; border-bottom: 1px solid rgba(55, 53, 47, 0.16);">战斗技巧</div>
-                                </div>
-                            </div>
-                            <div contenteditable="false" class="pseudoSelection"
-                                data-content-editable-void="true"
-                                style="user-select: none; --pseudoSelection--background:transparent; margin-left: 4px; display: flex; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 0; min-height: calc((1.5em + 3px) + 3px);">
-                                <div style="width: 28px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div data-block-id="8fd750ab-2b5a-4bc2-bd79-deea2ff16bb4"
-                class="notion-selectable notion-text-block"
-                style="width: 100%; max-width: 100%; margin-top: 1px; margin-bottom: 0px;">
-                <div style="color: inherit; fill: inherit;">
-                    <div style="display: flex;">
-                        <div class="notranslate" contenteditable="true" spellcheck="false"
-                            placeholder=" " data-content-editable-leaf="true"
-                            style="max-width: 100%; width: 100%; white-space: pre-wrap; word-break: break-word; caret-color: transparent; padding: 3px 2px; min-height: 1em; color: rgb(55, 53, 47); -webkit-text-fill-color: rgba(55, 53, 47, 0.4);">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <%}%>
+
+
+  
+   
+  
 </div>
 </div>
