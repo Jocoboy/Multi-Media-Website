@@ -39,6 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
+var olRouter = require('./routes/gujian_ol/index');
+app.use('/all_series/gujian_ol', olRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
